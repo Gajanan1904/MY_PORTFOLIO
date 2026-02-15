@@ -1,350 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gajanan Bidwai — Data Analyst Portfolio</title>
-    <meta name="description"
-        content="Data Analyst specializing in SQL, Python, Machine Learning, and Business Intelligence. Transforming raw data into revenue-driving insights." />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gajanan Bidwai — Data Analyst Portfolio</title>
+  <meta name="description" content="Data Analyst portfolio showcasing business intelligence, SQL, Python, and machine learning projects with measurable impact." />
 
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Icons — Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#hero" class="nav-logo">GB.</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button class="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+<!-- LOADER -->
+<div class="loader-wrap" id="loader">
+  <div class="loader-spinner"></div>
+</div>
+
+<!-- BACKGROUND ORBS -->
+<div class="bg-orbs">
+  <span class="o1"></span>
+  <span class="o2"></span>
+  <span class="o3"></span>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar" id="navbar">
+  <a href="#hero" class="nav-logo">GB.</a>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle" title="Toggle theme">
+      <i class="ri-moon-line theme-toggle-icon" id="themeIcon"></i>
+      <div class="theme-toggle-track">
+        <div class="theme-toggle-thumb"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-badge reveal">
+    <i class="ri-bar-chart-grouped-line"></i>
+    Open to Opportunities
+  </div>
+
+  <h1 class="hero-name reveal">
+    Hi, I'm <span class="gradient-text">Gajanan Bidwai</span>
+  </h1>
+
+  <p class="hero-title reveal">
+    Data Analyst &nbsp;|&nbsp; Business Intelligence &nbsp;|&nbsp; SQL &amp; Python
+  </p>
+
+  <p class="hero-desc reveal">
+    I transform raw data into strategic business decisions. Specializing in predictive analytics,
+    interactive dashboards, and end-to-end ML pipelines that drive measurable organizational impact.
+  </p>
+
+  <div class="hero-tools reveal">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
+    <span>Scikit-learn</span>
+    <span>Excel</span>
+    <span>Pandas</span>
+  </div>
+
+  <div class="hero-cta reveal">
+    <a href="#projects" class="btn btn-primary"><i class="ri-folder-line"></i> View Projects</a>
+    <a href="#resume" class="btn btn-outline"><i class="ri-file-download-line"></i> Download Resume</a>
+    <a href="#contact" class="btn btn-ghost"><i class="ri-mail-send-line"></i> Contact</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <span class="section-label reveal"><i class="ri-user-star-line"></i> About Me</span>
+  <h2 class="section-title reveal">Driving Decisions With Data</h2>
+  <p class="section-subtitle reveal">
+    B.Tech CSE graduate with hands-on experience in statistical analysis, machine learning, and business reporting — focused on translating complex datasets into clear, actionable insights.
+  </p>
+
+  <div class="about-grid">
+    <!-- Card 1 -->
+    <div class="glass-card about-card reveal">
+      <div class="icon-wrap"><i class="ri-line-chart-line"></i></div>
+      <h3>Data-Driven Decision Making</h3>
+      <p>Every analysis begins with a business question. I structure investigations around organizational KPIs, ensuring outputs directly support strategic decisions rather than surface-level reporting.</p>
+    </div>
+    <!-- Card 2 -->
+    <div class="glass-card about-card reveal">
+      <div class="icon-wrap"><i class="ri-flask-line"></i></div>
+      <h3>Experimentation Mindset</h3>
+      <p>I approach data problems with hypothesis-driven workflows — validating assumptions through statistical testing, iterative modeling, and rigorous evaluation before recommending action.</p>
+    </div>
+    <!-- Card 3 -->
+    <div class="glass-card about-card reveal">
+      <div class="icon-wrap"><i class="ri-puzzle-line"></i></div>
+      <h3>Structured Problem Solving</h3>
+      <p>From scoping the problem to delivering insights, I follow systematic pipelines — data cleaning, exploratory analysis, feature engineering, modeling, and visualization — so results are reproducible and scalable.</p>
+    </div>
+    <!-- Card 4 -->
+    <div class="glass-card about-card reveal">
+      <div class="icon-wrap"><i class="ri-team-line"></i></div>
+      <h3>Stakeholder Communication</h3>
+      <p>Technical depth means little without clarity. I translate analytical outputs into business language through dashboards, concise reports, and narrative-driven presentations tailored to each audience.</p>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-row reveal">
+    <div class="glass-card stat-item">
+      <div class="stat-value">4+</div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="glass-card stat-item">
+      <div class="stat-value">92%</div>
+      <div class="stat-label">ML Model Accuracy</div>
+    </div>
+    <div class="glass-card stat-item">
+      <div class="stat-value">60%</div>
+      <div class="stat-label">Manual Analysis Reduced</div>
+    </div>
+    <div class="glass-card stat-item">
+      <div class="stat-value">1st</div>
+      <div class="stat-label">HACK-IOT 2024 Winner</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section class="section" id="projects">
+  <span class="section-label reveal"><i class="ri-code-s-slash-line"></i> Projects</span>
+  <h2 class="section-title reveal">Case Studies &amp; Impact</h2>
+  <p class="section-subtitle reveal">
+    End-to-end analytical projects demonstrating business problem solving, ML model deployment, and data-driven insight generation.
+  </p>
+
+  <div class="project-grid">
+
+    <!-- PROJECT 1 — Attrition Risk -->
+    <div class="glass-card project-card reveal">
+      <div class="project-card-header">
+        <div class="project-card-icon c1"><i class="ri-user-unfollow-line"></i></div>
+        <h3 class="project-card-title">Attrition Risk &amp; Workforce Segmentation</h3>
+      </div>
+      <div class="project-card-body">
+        <p class="project-problem">
+          Organizations lose significant revenue to unplanned employee turnover. HR teams lacked a data-driven mechanism to proactively identify at-risk employees before attrition occurred.
+        </p>
+        <div class="project-details">
+          <div class="project-detail-row">
+            <span class="project-detail-label">Data:</span>
+            <span class="project-detail-value">HR Employee Attrition Dataset — demographics, satisfaction, performance, compensation</span>
+          </div>
+          <div class="project-detail-row">
+            <span class="project-detail-label">Method:</span>
+            <span class="project-detail-value">Preprocessing → Feature Engineering → Logistic Regression / KNN / Decision Tree → Flask Deployment</span>
+          </div>
         </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero section" id="hero">
-        <div class="container">
-            <div class="hero-content reveal">
-                <div class="hero-tag">
-                    <span class="dot"></span> Open to Opportunities
-                </div>
-                <h1>
-                    Gajanan<br /><span class="gradient-text">Bidwai</span>
-                </h1>
-                <p class="hero-role">Data Analyst &nbsp;|&nbsp; Business Intelligence &nbsp;|&nbsp; SQL &amp; Python</p>
-                <p class="hero-description">
-                    I turn complex datasets into clear, actionable business strategies — driving measurable outcomes
-                    through statistical modeling, predictive analytics, and stakeholder-ready visualizations.
-                </p>
-                <div class="hero-tools">
-                    <span class="tool-badge">Python</span>
-                    <span class="tool-badge">SQL / MySQL</span>
-                    <span class="tool-badge">Power BI</span>
-                    <span class="tool-badge">Tableau</span>
-                    <span class="tool-badge">Excel</span>
-                    <span class="tool-badge">Scikit-learn</span>
-                    <span class="tool-badge">XGBoost</span>
-                    <span class="tool-badge">Pandas</span>
-                </div>
-                <div class="hero-ctas">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fa-solid fa-diagram-project"></i> View Projects
-                    </a>
-                    <a href="https://github.com/Gajanan1904/MY_PORTFOLIO/releases/download/CV/2Feb.pdf" download
-                        class="btn btn-outline">
-                        <i class="fa-solid fa-download"></i> Download Resume
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fa-solid fa-envelope"></i> Contact
-                    </a>
-                </div>
-            </div>
+        <div class="project-insights">
+          <h4>Key Outcomes</h4>
+          <ul>
+            <li>Achieved 87.9% classification accuracy on attrition prediction</li>
+            <li>Deployed real-time prediction interface via Flask web application</li>
+            <li>Enabled proactive retention strategies for HR leadership</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">About Me</span>
-                <h2 class="section-title">Data-Driven Problem Solver</h2>
-                <p class="section-subtitle">Bridging the gap between raw data and strategic decision-making.</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>
-                        I'm a Computer Science graduate from Lovely Professional University with a sharp focus on data
-                        analytics and business intelligence. My analytical approach is rooted in <strong>structured
-                            problem-solving</strong> — every analysis begins with a clear business question and ends
-                        with a quantifiable recommendation.
-                    </p>
-                    <p>
-                        What sets me apart is the ability to <strong>translate complex statistical findings into
-                            stakeholder-friendly narratives</strong>. Whether it's building ML models that achieve 92%
-                        accuracy or automating data quality workflows that reduce errors by 40%, I prioritize outcomes
-                        that move the needle for the business.
-                    </p>
-                </div>
-                <div class="about-highlights reveal">
-                    <div class="highlight-card">
-                        <div class="icon">🎯</div>
-                        <h4>Business-First Analysis</h4>
-                        <p>Every model and dashboard is designed around a decision that needs to be made — not just data
-                            to be displayed.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="icon">⚡</div>
-                        <h4>Automation Mindset</h4>
-                        <p>I build repeatable pipelines that eliminate manual processes, having reduced data errors by
-                            40% and analysis time by 60%.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="icon">📊</div>
-                        <h4>Full-Stack Analytics</h4>
-                        <p>From raw SQL queries to ML model deployment to Power BI dashboards — I own the entire
-                            analytical pipeline end-to-end.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div class="experience-card reveal">
-                <div class="exp-header">
-                    <div>
-                        <h3>Lead — Data Management</h3>
-                        <span class="org">Lovely Professional University (Freelance)</span>
-                    </div>
-                    <span class="exp-date">Mar 2024 – Present</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Managed structured datasets for a 100+ member organization, maintaining 99% data accuracy
-                        through validation and consistency checks.</li>
-                    <li>Automated data quality processes using Excel and SQL-based logic, reducing manual errors by 40%.
-                    </li>
-                    <li>Performed data analysis and reporting to support decision-making and ensure data reliability
-                        across workflows.</li>
-                </ul>
-            </div>
+        <div class="project-tags">
+          <span>Python</span><span>Scikit-learn</span><span>Flask</span><span>Pandas</span><span>Seaborn</span>
         </div>
-    </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Projects</span>
-                <h2 class="section-title">Case Studies</h2>
-                <p class="section-subtitle">Each project demonstrates a structured approach to solving real business
-                    problems with data.</p>
-            </div>
-
-            <div class="projects-grid">
-
-                <!-- Project 1 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <div class="project-icon">🧠</div>
-                        <span class="project-date">Nov 2025 – Present</span>
-                    </div>
-                    <h3>Attrition Risk & Workforce Segmentation Using ML</h3>
-                    <p class="tagline">Machine learning–driven HR analytics to predict employee churn and segment
-                        workforce performance.</p>
-                    <div class="project-tools">
-                        <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>SQL</span><span>Power
-                            BI</span>
-                    </div>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <div class="value">92%</div>
-                            <div class="label">Model Accuracy</div>
-                        </div>
-                        <div class="metric">
-                            <div class="value">60%</div>
-                            <div class="label">Reduced Manual Work</div>
-                        </div>
-                    </div>
-                    <div class="project-expand">View Full Case Study <i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <div class="project-icon">📉</div>
-                        <span class="project-date">Jun 2025 – Jul 2025</span>
-                    </div>
-                    <h3>Data-Driven Churn Prediction with ML, SQL & Power BI</h3>
-                    <p class="tagline">Predictive classification framework to isolate at-risk customer cohorts and
-                        enable proactive retention.</p>
-                    <div class="project-tools">
-                        <span>Python</span><span>XGBoost</span><span>MySQL</span><span>Power
-                            BI</span><span>Pandas</span>
-                    </div>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <div class="value">92%</div>
-                            <div class="label">Prediction Accuracy</div>
-                        </div>
-                        <div class="metric">
-                            <div class="value">30%</div>
-                            <div class="label">Faster Decisions</div>
-                        </div>
-                    </div>
-                    <div class="project-expand">View Full Case Study <i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <div class="project-icon">🎓</div>
-                        <span class="project-date">Feb 2024 – Mar 2024</span>
-                    </div>
-                    <h3>EDU_HUB — Personalized E-Learning Platform</h3>
-                    <p class="tagline">Adaptive learning platform with performance-engineered frontend and hybrid
-                        backend, recognized at HACK-IOT 2024.</p>
-                    <div class="project-tools">
-                        <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub
-                            Actions</span>
-                    </div>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <div class="value">50%</div>
-                            <div class="label">Faster Load Time</div>
-                        </div>
-                        <div class="metric">
-                            <div class="value">1st</div>
-                            <div class="label">HACK-IOT 2024</div>
-                        </div>
-                    </div>
-                    <div class="project-expand">View Full Case Study <i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <div class="project-icon">💰</div>
-                        <span class="project-date">2025</span>
-                    </div>
-                    <h3>FinTrack Pro — CLI Finance Manager</h3>
-                    <p class="tagline">Command-line personal finance system with relational database design, budget
-                        alerts, and category analytics.</p>
-                    <div class="project-tools">
-                        <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>Raw
-                            SQL</span><span>CLI</span>
-                    </div>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <div class="value">4</div>
-                            <div class="label">Table Schema</div>
-                        </div>
-                        <div class="metric">
-                            <div class="value">~80%</div>
-                            <div class="label">Fewer Data Errors</div>
-                        </div>
-                    </div>
-                    <div class="project-expand">View Full Case Study <i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== RESUME ===== -->
-    <section class="section resume-section" id="resume">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Resume</span>
-                <h2 class="section-title">My Background</h2>
-                <p class="section-subtitle" style="margin: 0 auto 0;">A summary of my education, experience, and
-                    technical proficiency.</p>
-            </div>
-
-            <div class="resume-card reveal">
-                <div class="resume-icon">📄</div>
-                <h3>Download My Resume</h3>
-                <p>Get a comprehensive overview of my skills, experience, projects, and education in a single document.
-                </p>
-                <div class="resume-highlights">
-                    <div class="resume-stat">
-                        <div class="num">4+</div>
-                        <div class="desc">Projects Delivered</div>
-                    </div>
-                    <div class="resume-stat">
-                        <div class="num">1+</div>
-                        <div class="desc">Years Experience</div>
-                    </div>
-                    <div class="resume-stat">
-                        <div class="num">8+</div>
-                        <div class="desc">Tools & Technologies</div>
-                    </div>
-                    <div class="resume-stat">
-                        <div class="num">3</div>
-                        <div class="desc">Certifications</div>
-                    </div>
-                </div>
-                <a href="https://github.com/Gajanan1904/MY_PORTFOLIO/releases/download/CV/2Feb.pdf" download
-                    class="btn btn-primary">
-                    <i class="fa-solid fa-download"></i> Download Resume (PDF)
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Get In Touch</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle" style="margin: 0 auto 0;">Interested in collaboration or have a data
-                    challenge? Reach out — I'd love to hear from you.</p>
-            </div>
-
-            <div class="contact-links reveal">
-                <a href="mailto:gbidwai19@gmail.com" class="contact-card">
-                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                    <h4>Email</h4>
-                    <p>gbidwai19@gmail.com</p>
-                </a>
-                <a href="https://linkedin.com/in/gajanan19" target="_blank" rel="noopener noreferrer"
-                    class="contact-card">
-                    <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                    <h4>LinkedIn</h4>
-                    <p>linkedin.com/in/gajanan19</p>
-                </a>
-                <a href="https://github.com/Gajanan1904" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <div class="icon"><i class="fa-brands fa-github"></i></div>
-                    <h4>GitHub</h4>
-                    <p>github.com/Gajanan1904</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <p>Designed & built by <span>Gajanan Bidwai</span> · 2025</p>
-        </div>
-    </footer>
-
-    <!-- ===== PROJECT MODAL ===== -->
-    <div class="modal-overlay" id="projectModal">
-        <div class="modal">
-            <button class="modal-close" aria-label="Close">✕</button>
-            <div id="modalBody"></div>
-        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <!-- PROJECT 2 — Churn Prediction -->
+    <div class="glass-card project-card reveal">
+      <div class="project-card-header">
+        <div class="project-card-icon c2"><i class="ri-user-search-line"></i></div>
+        <h3 class="project-card-title">Churn Prediction Analysis</h3>
+      </div>
+      <div class="project-card-body">
+        <p class="project-problem">
+          Customer churn directly impacts revenue and growth. The business needed a predictive model to identify high-risk customers before disengagement, enabling targeted retention campaigns.
+        </p>
+        <div class="project-details">
+          <div class="project-detail-row">
+            <span class="project-detail-label">Data:</span>
+            <span class="project-detail-value">Customer behavioral & demographic dataset — usage, engagement, churn flags</span>
+          </div>
+          <div class="project-detail-row">
+            <span class="project-detail-label">Method:</span>
+            <span class="project-detail-value">Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards</span>
+          </div>
+        </div>
+        <div class="project-insights">
+          <h4>Key Outcomes</h4>
+          <ul>
+            <li>92% model accuracy with gradient-boosted decision trees</li>
+            <li>Reduced manual evaluation effort by 60%</li>
+            <li>Improved decision turnaround time by 30% through automated reporting</li>
+          </ul>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>XGBoost</span><span>SQL</span><span>Power BI</span><span>Pandas</span>
+        </div>
+      </div>
+    </div>
 
+    <!-- PROJECT 3 — FinTrack Pro -->
+    <div class="glass-card project-card reveal">
+      <div class="project-card-header">
+        <div class="project-card-icon c3"><i class="ri-money-dollar-circle-line"></i></div>
+        <h3 class="project-card-title">FinTrack Pro — CLI Finance Manager</h3>
+      </div>
+      <div class="project-card-body">
+        <p class="project-problem">
+          Personal finance tracking tools are often overcomplicated. This project delivers a lightweight, database-backed CLI system for expense management, budgeting, and category-level analytics.
+        </p>
+        <div class="project-details">
+          <div class="project-detail-row">
+            <span class="project-detail-label">Data:</span>
+            <span class="project-detail-value">User-generated financial records — expenses, categories, subscriptions, budgets</span>
+          </div>
+          <div class="project-detail-row">
+            <span class="project-detail-label">Method:</span>
+            <span class="project-detail-value">SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget Alerts</span>
+          </div>
+        </div>
+        <div class="project-insights">
+          <h4>Key Outcomes</h4>
+          <ul>
+            <li>Modular architecture with 4-table relational database</li>
+            <li>Automated budget alerts when spending exceeds limits</li>
+            <li>Category-wise analytics generated via raw SQL queries</li>
+          </ul>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>SQL</span><span>CLI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 — EDU_HUB -->
+    <div class="glass-card project-card reveal">
+      <div class="project-card-header">
+        <div class="project-card-icon c4"><i class="ri-graduation-cap-line"></i></div>
+        <h3 class="project-card-title">EDU_HUB — Personalized Learning Platform</h3>
+      </div>
+      <div class="project-card-body">
+        <p class="project-problem">
+          Existing educational platforms suffer from slow page loads and poor adaptive experiences. This project engineered a high-performance e-learning platform delivering personalized learning pathways.
+        </p>
+        <div class="project-details">
+          <div class="project-detail-row">
+            <span class="project-detail-label">Stack:</span>
+            <span class="project-detail-value">HTML5, CSS3, JavaScript, Django, PHP APIs</span>
+          </div>
+          <div class="project-detail-row">
+            <span class="project-detail-label">Method:</span>
+            <span class="project-detail-value">Frontend Architecture → Hybrid Backend → Interactive Assessment Module → UX Standardization</span>
+          </div>
+        </div>
+        <div class="project-insights">
+          <h4>Key Outcomes</h4>
+          <ul>
+            <li>50% reduction in page load latency across all devices</li>
+            <li>Selected and recognized at HACK-IOT 2024 (1st place among 450+ teams)</li>
+            <li>Accessibility-compliant, cross-device compatible platform</li>
+          </ul>
+        </div>
+        <div class="project-tags">
+          <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub Actions</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /project-grid -->
+</section>
+
+<!-- ============================================================
+     RESUME
+     ============================================================ -->
+<section class="section" id="resume">
+  <span class="section-label reveal"><i class="ri-file-text-line"></i> Resume</span>
+  <h2 class="section-title reveal">Professional Summary</h2>
+  <p class="section-subtitle reveal">
+    A snapshot of my skills, experience, and qualifications — available for download.
+  </p>
+
+  <div class="resume-content reveal">
+    <div class="resume-text">
+      <h3>Experience &amp; Education</h3>
+      <p>
+        Lead – Data Management at LPU (Freelance), managing structured datasets for a 100+ member organization with 99% data accuracy.
+        B.Tech in Computer Science &amp; Engineering from Lovely Professional University, Phagwara.
+      </p>
+
+      <div class="resume-highlights">
+        <span><i class="ri-database-2-line"></i> SQL &amp; Data Validation</span>
+        <span><i class="ri-bar-chart-fill"></i> Power BI &amp; Tableau</span>
+        <span><i class="ri-code-s-slash-line"></i> Python &amp; Scikit-learn</span>
+        <span><i class="ri-table-line"></i> Excel (Pivot, VLOOKUP)</span>
+        <span><i class="ri-brain-line"></i> ML &amp; Predictive Analytics</span>
+        <span><i class="ri-git-branch-line"></i> Git / GitHub</span>
+      </div>
+
+      <a href="#" class="btn btn-primary" id="downloadResumeBtn">
+        <i class="ri-download-2-line"></i> Download Resume (PDF)
+      </a>
+    </div>
+
+    <div class="resume-card-wrap">
+      <div class="glass-card resume-visual">
+        <i class="ri-award-line"></i>
+        <p>Certifications</p>
+        <ul style="text-align:left; font-size:.88rem; color:var(--text-secondary); padding-left:1.2rem; list-style:disc;">
+          <li>DSA — Apna College</li>
+          <li>Cloud Computing — NPTEL</li>
+          <li>Python for Data Science — Coursera</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section" id="contact">
+  <span class="section-label reveal"><i class="ri-contacts-book-line"></i> Contact</span>
+  <h2 class="section-title reveal">Let's Connect</h2>
+  <p class="section-subtitle reveal">
+    Reach out for opportunities, collaboration, or just to say hello.
+  </p>
+
+  <div class="contact-grid">
+    <a href="mailto:gbidwai19@gmail.com" class="glass-card contact-card reveal">
+      <i class="ri-mail-line"></i>
+      <h4>Email</h4>
+      <p>gbidwai19@gmail.com</p>
+    </a>
+    <a href="https://linkedin.com/in/gajanan19" target="_blank" rel="noopener" class="glass-card contact-card reveal">
+      <i class="ri-linkedin-box-fill"></i>
+      <h4>LinkedIn</h4>
+      <p>linkedin.com/in/gajanan19</p>
+    </a>
+    <a href="https://github.com/Gajanan1904" target="_blank" rel="noopener" class="glass-card contact-card reveal">
+      <i class="ri-github-fill"></i>
+      <h4>GitHub</h4>
+      <p>github.com/Gajanan1904</p>
+    </a>
+    <a href="tel:+917775018550" class="glass-card contact-card reveal">
+      <i class="ri-phone-line"></i>
+      <h4>Phone</h4>
+      <p>+91-7775018550</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <p>&copy; 2025 <span class="gradient-text">Gajanan Bidwai</span>. Designed with precision.</p>
+</footer>
+
+<!-- JS -->
+<script src="app.js"></script>
+</body>
 </html>
