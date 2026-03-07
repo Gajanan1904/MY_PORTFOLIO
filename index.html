@@ -424,20 +424,28 @@
           <p class="modal-desc">Customer churn directly impacts revenue and growth. The business needed a predictive
             model to identify high-risk customers before disengagement, enabling targeted retention campaigns.</p>
 
-          <img src="assets/churn_1.png" alt="Customer Dashboard"
+          <img src="assets/churn_1.png" alt="Customer Dashboard" class="clickable-img" onclick="openLightbox(this.src)"
             style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />
 
           <div class="modal-grid">
             <div class="modal-col">
               <h4><i class="ri-database-2-line"></i> Data Profile</h4>
               <p>Customer behavioral & demographic dataset — usage, engagement, churn flags.</p>
-              <img src="assets/churn_4.png" alt="Data Exploration Plots"
+              <img src="assets/churn_2.png" alt="Monthly Charge vs Tenure" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+              <img src="assets/churn_3.png" alt="Monthly Charge by Customer Status" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+              <img src="assets/churn_4.png" alt="Data Exploration Plots" class="clickable-img"
+                onclick="openLightbox(this.src)"
                 style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
             </div>
             <div class="modal-col">
               <h4><i class="ri-git-merge-line"></i> Methodology & Evaluation</h4>
               <p>Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards.</p>
-              <img src="assets/churn_5.png" alt="Model Evaluation Metrics"
+              <img src="assets/churn_5.png" alt="Model Evaluation Metrics" class="clickable-img"
+                onclick="openLightbox(this.src)"
                 style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
             </div>
           </div>
@@ -715,6 +723,14 @@
   <footer class="footer">
     <p>&copy; 2025 <span class="gradient-text">Gajanan Bidwai</span>. Designed with precision.</p>
   </footer>
+
+  <!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" onclick="event.stopPropagation()">
+  </div>
 
   <!-- JS -->
   <script src="app.js"></script>

@@ -6,16 +6,16 @@
   'use strict';
 
   // ---- DOM refs ----
-  const html         = document.documentElement;
-  const loader       = document.getElementById('loader');
-  const navbar       = document.getElementById('navbar');
-  const navLinks     = document.getElementById('navLinks');
-  const hamburger    = document.getElementById('hamburger');
-  const themeToggle  = document.getElementById('themeToggle');
-  const themeIcon    = document.getElementById('themeIcon');
-  const sections     = document.querySelectorAll('.section, .hero');
-  const navAnchors   = document.querySelectorAll('.nav-links a[href^="#"]');
-  const reveals      = document.querySelectorAll('.reveal');
+  const html = document.documentElement;
+  const loader = document.getElementById('loader');
+  const navbar = document.getElementById('navbar');
+  const navLinks = document.getElementById('navLinks');
+  const hamburger = document.getElementById('hamburger');
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const sections = document.querySelectorAll('.section, .hero');
+  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+  const reveals = document.querySelectorAll('.reveal');
 
   // ============================================================
   // LOADER
@@ -130,7 +130,7 @@
 // ============================================================
 // PROJECT MODALS (Global functions for inline onclick)
 // ============================================================
-window.openModal = function(modalId) {
+window.openModal = function (modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.classList.add('active');
@@ -138,10 +138,30 @@ window.openModal = function(modalId) {
   }
 };
 
-window.closeModal = function(modalId) {
+window.closeModal = function (modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.classList.remove('active');
     document.body.style.overflow = ''; // restore scrolling
+  }
+};
+
+// ============================================================
+// LIGHTBOX
+// ============================================================
+window.openLightbox = function (src) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  if (lightbox && lightboxImg) {
+    lightboxImg.src = src;
+    lightbox.classList.add('active');
+    // keep body overflow hidden since modal is likely already doing it
+  }
+};
+
+window.closeLightbox = function () {
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    lightbox.classList.remove('active');
   }
 };
