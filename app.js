@@ -165,3 +165,22 @@ window.closeLightbox = function () {
     lightbox.classList.remove('active');
   }
 };
+
+// ============================================================
+// ESCAPE KEY SUPPORT
+// ============================================================
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    // 1. Close lightbox if open
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox && lightbox.classList.contains('active')) {
+      window.closeLightbox();
+      return;
+    }
+    // 2. Otherwise close any open modals
+    const activeModals = document.querySelectorAll('.project-modal.active');
+    activeModals.forEach(modal => {
+      window.closeModal(modal.id);
+    });
+  }
+});
