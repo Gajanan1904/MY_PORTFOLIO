@@ -310,8 +310,7 @@
       <!-- PROJECT 2 — Churn Prediction -->
       <div class="glass-card project-card reveal">
         <div class="project-card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
-            alt="Churn Project Thumbnail" class="project-thumbnail" />
+          <img src="assets/churn_1.png" alt="Churn Prediction Dashboard" class="project-thumbnail" />
         </div>
         <div class="project-card-body">
           <div class="project-card-header">
@@ -418,21 +417,28 @@
     <!-- Modal 2 -->
     <div class="project-modal" id="modal-p2">
       <div class="modal-backdrop" onclick="closeModal('modal-p2')"></div>
-      <div class="glass-card modal-content">
+      <div class="glass-card modal-content" style="max-width: 800px;">
         <button class="modal-close" onclick="closeModal('modal-p2')"><i class="ri-close-line"></i></button>
         <div class="modal-body">
           <h3 class="modal-title">Churn Prediction Analysis</h3>
           <p class="modal-desc">Customer churn directly impacts revenue and growth. The business needed a predictive
             model to identify high-risk customers before disengagement, enabling targeted retention campaigns.</p>
 
+          <img src="assets/churn_1.png" alt="Customer Dashboard"
+            style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />
+
           <div class="modal-grid">
             <div class="modal-col">
               <h4><i class="ri-database-2-line"></i> Data Profile</h4>
               <p>Customer behavioral & demographic dataset — usage, engagement, churn flags.</p>
+              <img src="assets/churn_4.png" alt="Data Exploration Plots"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
             </div>
             <div class="modal-col">
-              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <h4><i class="ri-git-merge-line"></i> Methodology & Evaluation</h4>
               <p>Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards.</p>
+              <img src="assets/churn_5.png" alt="Model Evaluation Metrics"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
             </div>
           </div>
 
