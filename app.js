@@ -126,3 +126,22 @@
   });
 
 })();
+
+// ============================================================
+// PROJECT MODALS (Global functions for inline onclick)
+// ============================================================
+window.openModal = function(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // prevent scrolling behind modal
+  }
+};
+
+window.closeModal = function(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // restore scrolling
+  }
+};

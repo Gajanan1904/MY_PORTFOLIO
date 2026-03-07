@@ -287,152 +287,245 @@
 
       <!-- PROJECT 1 — Attrition Risk -->
       <div class="glass-card project-card reveal">
-        <div class="project-card-header">
-          <div class="project-card-icon c1"><i class="ri-user-unfollow-line"></i></div>
-          <h3 class="project-card-title">Attrition Risk &amp; Workforce Segmentation</h3>
+        <div class="project-card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+            alt="Attrition Project Thumbnail" class="project-thumbnail" />
         </div>
         <div class="project-card-body">
+          <div class="project-card-header">
+            <div class="project-card-icon c1"><i class="ri-user-unfollow-line"></i></div>
+            <h3 class="project-card-title">Attrition Risk Analysis</h3>
+          </div>
           <p class="project-problem">
-            Organizations lose significant revenue to unplanned employee turnover. HR teams lacked a data-driven
-            mechanism to proactively identify at-risk employees before attrition occurred.
+            Predictive modeling to identify at-risk employees and boost HR retention strategies before attrition occurs.
           </p>
-          <div class="project-details">
-            <div class="project-detail-row">
-              <span class="project-detail-label">Data:</span>
-              <span class="project-detail-value">HR Employee Attrition Dataset — demographics, satisfaction,
-                performance, compensation</span>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Flask</span>
+          </div>
+          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p1')">See More <i
+              class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 — Churn Prediction -->
+      <div class="glass-card project-card reveal">
+        <div class="project-card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
+            alt="Churn Project Thumbnail" class="project-thumbnail" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-header">
+            <div class="project-card-icon c2"><i class="ri-user-search-line"></i></div>
+            <h3 class="project-card-title">Churn Prediction Analysis</h3>
+          </div>
+          <p class="project-problem">
+            Machine learning engineered to identify high-risk customers, enabling targeted revenue retention campaigns.
+          </p>
+          <div class="project-tags">
+            <span>XGBoost</span><span>Power BI</span><span>SQL</span>
+          </div>
+          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p2')">See More <i
+              class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 — FinTrack Pro -->
+      <div class="glass-card project-card reveal">
+        <div class="project-card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=600&auto=format&fit=crop"
+            alt="Finance Project Thumbnail" class="project-thumbnail" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-header">
+            <div class="project-card-icon c3"><i class="ri-money-dollar-circle-line"></i></div>
+            <h3 class="project-card-title">FinTrack Pro Finance</h3>
+          </div>
+          <p class="project-problem">
+            A lightweight, database-backed CLI system for expense management, budgeting, and automated alerts.
+          </p>
+          <div class="project-tags">
+            <span>SQLite</span><span>SQLAlchemy</span><span>CLI</span>
+          </div>
+          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p3')">See More <i
+              class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 — EDU_HUB -->
+      <div class="glass-card project-card reveal">
+        <div class="project-card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=600&auto=format&fit=crop"
+            alt="Education Project Thumbnail" class="project-thumbnail" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-header">
+            <div class="project-card-icon c4"><i class="ri-graduation-cap-line"></i></div>
+            <h3 class="project-card-title">EDU_HUB Platform</h3>
+          </div>
+          <p class="project-problem">
+            High-performance e-learning architecture delivering personalized and adaptive student pathways.
+          </p>
+          <div class="project-tags">
+            <span>Django</span><span>JS</span><span>PHP</span>
+          </div>
+          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p4')">See More <i
+              class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+    </div><!-- /project-grid -->
+
+    <!-- ============================================================
+       PROJECT MODALS
+       ============================================================ -->
+    <!-- Modal 1 -->
+    <div class="project-modal" id="modal-p1">
+      <div class="modal-backdrop" onclick="closeModal('modal-p1')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p1')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">Attrition Risk &amp; Workforce Segmentation</h3>
+          <p class="modal-desc">Organizations lose significant revenue to unplanned employee turnover. HR teams lacked a
+            data-driven mechanism to proactively identify at-risk employees before attrition occurred.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>HR Employee Attrition Dataset — demographics, satisfaction, performance, compensation.</p>
             </div>
-            <div class="project-detail-row">
-              <span class="project-detail-label">Method:</span>
-              <span class="project-detail-value">Preprocessing → Feature Engineering → Logistic Regression / KNN /
-                Decision Tree → Flask Deployment</span>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>Preprocessing → Feature Engineering → Logistic Regression / KNN / Decision Tree → Flask Deployment.</p>
             </div>
           </div>
-          <div class="project-insights">
-            <h4>Key Outcomes</h4>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
             <ul>
               <li>Achieved 87.9% classification accuracy on attrition prediction</li>
               <li>Deployed real-time prediction interface via Flask web application</li>
               <li>Enabled proactive retention strategies for HR leadership</li>
             </ul>
           </div>
+
           <div class="project-tags">
             <span>Python</span><span>Scikit-learn</span><span>Flask</span><span>Pandas</span><span>Seaborn</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- PROJECT 2 — Churn Prediction -->
-      <div class="glass-card project-card reveal">
-        <div class="project-card-header">
-          <div class="project-card-icon c2"><i class="ri-user-search-line"></i></div>
-          <h3 class="project-card-title">Churn Prediction Analysis</h3>
-        </div>
-        <div class="project-card-body">
-          <p class="project-problem">
-            Customer churn directly impacts revenue and growth. The business needed a predictive model to identify
-            high-risk customers before disengagement, enabling targeted retention campaigns.
-          </p>
-          <div class="project-details">
-            <div class="project-detail-row">
-              <span class="project-detail-label">Data:</span>
-              <span class="project-detail-value">Customer behavioral & demographic dataset — usage, engagement, churn
-                flags</span>
+    <!-- Modal 2 -->
+    <div class="project-modal" id="modal-p2">
+      <div class="modal-backdrop" onclick="closeModal('modal-p2')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p2')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">Churn Prediction Analysis</h3>
+          <p class="modal-desc">Customer churn directly impacts revenue and growth. The business needed a predictive
+            model to identify high-risk customers before disengagement, enabling targeted retention campaigns.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>Customer behavioral & demographic dataset — usage, engagement, churn flags.</p>
             </div>
-            <div class="project-detail-row">
-              <span class="project-detail-label">Method:</span>
-              <span class="project-detail-value">Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI
-                Dashboards</span>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards.</p>
             </div>
           </div>
-          <div class="project-insights">
-            <h4>Key Outcomes</h4>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
             <ul>
               <li>92% model accuracy with gradient-boosted decision trees</li>
               <li>Reduced manual evaluation effort by 60%</li>
               <li>Improved decision turnaround time by 30% through automated reporting</li>
             </ul>
           </div>
+
           <div class="project-tags">
             <span>Python</span><span>XGBoost</span><span>SQL</span><span>Power BI</span><span>Pandas</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- PROJECT 3 — FinTrack Pro -->
-      <div class="glass-card project-card reveal">
-        <div class="project-card-header">
-          <div class="project-card-icon c3"><i class="ri-money-dollar-circle-line"></i></div>
-          <h3 class="project-card-title">FinTrack Pro — CLI Finance Manager</h3>
-        </div>
-        <div class="project-card-body">
-          <p class="project-problem">
-            Personal finance tracking tools are often overcomplicated. This project delivers a lightweight,
-            database-backed CLI system for expense management, budgeting, and category-level analytics.
-          </p>
-          <div class="project-details">
-            <div class="project-detail-row">
-              <span class="project-detail-label">Data:</span>
-              <span class="project-detail-value">User-generated financial records — expenses, categories, subscriptions,
-                budgets</span>
+    <!-- Modal 3 -->
+    <div class="project-modal" id="modal-p3">
+      <div class="modal-backdrop" onclick="closeModal('modal-p3')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p3')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">FinTrack Pro — CLI Finance Manager</h3>
+          <p class="modal-desc">Personal finance tracking tools are often overcomplicated. This project delivers a
+            lightweight, database-backed CLI system for expense management, budgeting, and category-level analytics.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>User-generated financial records — expenses, categories, subscriptions, budgets.</p>
             </div>
-            <div class="project-detail-row">
-              <span class="project-detail-label">Method:</span>
-              <span class="project-detail-value">SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget
-                Alerts</span>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget Alerts.</p>
             </div>
           </div>
-          <div class="project-insights">
-            <h4>Key Outcomes</h4>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
             <ul>
               <li>Modular architecture with 4-table relational database</li>
               <li>Automated budget alerts when spending exceeds limits</li>
               <li>Category-wise analytics generated via raw SQL queries</li>
             </ul>
           </div>
+
           <div class="project-tags">
             <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>SQL</span><span>CLI</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- PROJECT 4 — EDU_HUB -->
-      <div class="glass-card project-card reveal">
-        <div class="project-card-header">
-          <div class="project-card-icon c4"><i class="ri-graduation-cap-line"></i></div>
-          <h3 class="project-card-title">EDU_HUB — Personalized Learning Platform</h3>
-        </div>
-        <div class="project-card-body">
-          <p class="project-problem">
-            Existing educational platforms suffer from slow page loads and poor adaptive experiences. This project
-            engineered a high-performance e-learning platform delivering personalized learning pathways.
-          </p>
-          <div class="project-details">
-            <div class="project-detail-row">
-              <span class="project-detail-label">Stack:</span>
-              <span class="project-detail-value">HTML5, CSS3, JavaScript, Django, PHP APIs</span>
+    <!-- Modal 4 -->
+    <div class="project-modal" id="modal-p4">
+      <div class="modal-backdrop" onclick="closeModal('modal-p4')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p4')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">EDU_HUB — Personalized Learning Platform</h3>
+          <p class="modal-desc">Existing educational platforms suffer from slow page loads and poor adaptive
+            experiences. This project engineered a high-performance e-learning platform delivering personalized learning
+            pathways.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-pages-line"></i> Tech Stack</h4>
+              <p>HTML5, CSS3, JavaScript, Django, PHP APIs.</p>
             </div>
-            <div class="project-detail-row">
-              <span class="project-detail-label">Method:</span>
-              <span class="project-detail-value">Frontend Architecture → Hybrid Backend → Interactive Assessment Module
-                → UX Standardization</span>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>Frontend Architecture → Hybrid Backend → Interactive Assessment Module → UX Standardization.</p>
             </div>
           </div>
-          <div class="project-insights">
-            <h4>Key Outcomes</h4>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
             <ul>
               <li>50% reduction in page load latency across all devices</li>
               <li>Selected and recognized at HACK-IOT 2024 (1st place among 450+ teams)</li>
               <li>Accessibility-compliant, cross-device compatible platform</li>
             </ul>
           </div>
+
           <div class="project-tags">
             <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub Actions</span>
           </div>
         </div>
       </div>
-
-    </div><!-- /project-grid -->
+    </div>
   </section>
 
   <!-- ============================================================
