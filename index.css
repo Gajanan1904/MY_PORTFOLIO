@@ -1216,6 +1216,16 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  justify-content: center;
+}
+
+/* Make the last odd item span across both columns but constraint its maximum width */
+.education-grid> :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: calc(50% - 1rem);
+  /* 50% minus half the gap */
 }
 
 .education-card {
@@ -1463,6 +1473,10 @@ textarea.form-control {
   .project-grid,
   .education-grid {
     grid-template-columns: 1fr;
+  }
+
+  .education-grid> :last-child:nth-child(odd) {
+    max-width: 100%;
   }
 }
 
