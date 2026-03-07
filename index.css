@@ -1137,12 +1137,15 @@ ul {
    ACHIEVEMENTS
    ============================================================ */
 .achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .achievement-card {
+  flex: 1 1 350px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
