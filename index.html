@@ -373,192 +373,6 @@
 
     </div><!-- /project-grid -->
 
-    <!-- ============================================================
-       PROJECT MODALS
-       ============================================================ -->
-    <!-- Modal 1 -->
-    <div class="project-modal" id="modal-p1">
-      <div class="modal-backdrop" onclick="closeModal('modal-p1')"></div>
-      <div class="glass-card modal-content">
-        <button class="modal-close" onclick="closeModal('modal-p1')"><i class="ri-close-line"></i></button>
-        <div class="modal-body">
-          <h3 class="modal-title">Attrition Risk &amp; Workforce Segmentation</h3>
-          <p class="modal-desc">Organizations lose significant revenue to unplanned employee turnover. HR teams lacked a
-            data-driven mechanism to proactively identify at-risk employees before attrition occurred.</p>
-
-          <div class="modal-grid">
-            <div class="modal-col">
-              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
-              <p>HR Employee Attrition Dataset — demographics, satisfaction, performance, compensation.</p>
-            </div>
-            <div class="modal-col">
-              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
-              <p>Preprocessing → Feature Engineering → Logistic Regression / KNN / Decision Tree → Flask Deployment.</p>
-            </div>
-          </div>
-
-          <div class="modal-insights">
-            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
-            <ul>
-              <li>Achieved 87.9% classification accuracy on attrition prediction</li>
-              <li>Deployed real-time prediction interface via Flask web application</li>
-              <li>Enabled proactive retention strategies for HR leadership</li>
-            </ul>
-          </div>
-
-          <div class="project-tags">
-            <span>Python</span><span>Scikit-learn</span><span>Flask</span><span>Pandas</span><span>Seaborn</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="project-modal" id="modal-p2">
-      <div class="modal-backdrop" onclick="closeModal('modal-p2')"></div>
-      <div class="glass-card modal-content" style="max-width: 800px;">
-        <button class="modal-close" onclick="closeModal('modal-p2')"><i class="ri-close-line"></i></button>
-        <div class="modal-body">
-          <h3 class="modal-title">Churn Prediction Analysis</h3>
-          <p class="modal-desc">Customer churn directly impacts revenue and growth. The business needed a predictive
-            model to identify high-risk customers before disengagement, enabling targeted retention campaigns.</p>
-
-          <img src="assets/churn_1.png" alt="Customer Dashboard" class="clickable-img" onclick="openLightbox(this.src)"
-            style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />
-
-          <div class="modal-grid">
-            <div class="modal-col">
-              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
-              <p>Customer behavioral & demographic dataset — usage, engagement, churn flags.</p>
-              <img src="assets/churn_2.png" alt="Monthly Charge vs Tenure" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-              <img src="assets/churn_3.png" alt="Monthly Charge by Customer Status" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-            </div>
-            <div class="modal-col">
-              <h4><i class="ri-git-merge-line"></i> Methodology & Evaluation</h4>
-              <p>Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards.</p>
-              <img src="assets/churn_4.png" alt="Data Exploration Plots" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-              <img src="assets/churn_5.png" alt="Model Evaluation Metrics" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-            </div>
-          </div>
-
-          <div class="modal-insights">
-            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
-            <ul>
-              <li>92% model accuracy with gradient-boosted decision trees</li>
-              <li>Reduced manual evaluation effort by 60%</li>
-              <li>Improved decision turnaround time by 30% through automated reporting</li>
-            </ul>
-          </div>
-
-          <div class="project-tags">
-            <span>Python</span><span>XGBoost</span><span>SQL</span><span>Power BI</span><span>Pandas</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="project-modal" id="modal-p3">
-      <div class="modal-backdrop" onclick="closeModal('modal-p3')"></div>
-      <div class="glass-card modal-content">
-        <button class="modal-close" onclick="closeModal('modal-p3')"><i class="ri-close-line"></i></button>
-        <div class="modal-body">
-          <h3 class="modal-title">FinTrack Pro — CLI Finance Manager</h3>
-          <p class="modal-desc">Personal finance tracking tools are often overcomplicated. This project delivers a
-            lightweight, database-backed CLI system for expense management, budgeting, and category-level analytics.</p>
-
-          <div class="modal-grid">
-            <div class="modal-col">
-              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
-              <p>User-generated financial records — expenses, categories, subscriptions, budgets.</p>
-            </div>
-            <div class="modal-col">
-              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
-              <p>SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget Alerts.</p>
-            </div>
-          </div>
-
-          <div class="modal-insights">
-            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
-            <ul>
-              <li>Modular architecture with 4-table relational database</li>
-              <li>Automated budget alerts when spending exceeds limits</li>
-              <li>Category-wise analytics generated via raw SQL queries</li>
-            </ul>
-          </div>
-
-          <div class="project-tags">
-            <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>SQL</span><span>CLI</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="project-modal" id="modal-p4">
-      <div class="modal-backdrop" onclick="closeModal('modal-p4')"></div>
-      <div class="glass-card modal-content" style="max-width: 800px;">
-        <button class="modal-close" onclick="closeModal('modal-p4')"><i class="ri-close-line"></i></button>
-        <div class="modal-body">
-          <h3 class="modal-title">EDU_HUB — Personalized Learning Platform</h3>
-          <p class="modal-desc">Existing educational platforms suffer from slow page loads and poor adaptive
-            experiences. This project engineered a high-performance e-learning platform delivering personalized learning
-            pathways.</p>
-
-          <div style="margin-bottom: 1.5rem;">
-            <a href="https://eduhublearningplatform.vercel.app/pg1.html" target="_blank" rel="noopener"
-              class="btn btn-primary btn-sm">
-              <i class="ri-global-line"></i> Live Website
-            </a>
-          </div>
-
-          <img src="assets/eduhub_1.png" alt="EDU_HUB Platform Preview" class="clickable-img"
-            onclick="openLightbox(this.src)"
-            style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />
-
-          <div class="modal-grid">
-            <div class="modal-col">
-              <h4><i class="ri-pages-line"></i> Tech Stack</h4>
-              <p>HTML5, CSS3, JavaScript, Django, PHP APIs.</p>
-              <img src="assets/eduhub_2.png" alt="EDU_HUB Dashboard" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-              <img src="assets/eduhub_4.png" alt="EDU_HUB Form" class="clickable-img" onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-            </div>
-            <div class="modal-col">
-              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
-              <p>Frontend Architecture → Hybrid Backend → Interactive Assessment Module → UX Standardization.</p>
-              <img src="assets/eduhub_3.png" alt="EDU_HUB Features" class="clickable-img"
-                onclick="openLightbox(this.src)"
-                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
-            </div>
-          </div>
-
-          <div class="modal-insights">
-            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
-            <ul>
-              <li>50% reduction in page load latency across all devices</li>
-              <li>Selected and recognized at HACK-IOT 2024 (1st place among 450+ teams)</li>
-              <li>Accessibility-compliant, cross-device compatible platform</li>
-            </ul>
-          </div>
-
-          <div class="project-tags">
-            <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub Actions</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ============================================================
      ACHIEVEMENTS
@@ -741,6 +555,191 @@
   <footer class="footer">
     <p>&copy; 2025 <span class="gradient-text">Gajanan Bidwai</span>. Designed with precision.</p>
   </footer>
+
+    <!-- ============================================================
+       PROJECT MODALS
+       ============================================================ -->
+    <!-- Modal 1 -->
+    <div class="project-modal" id="modal-p1">
+      <div class="modal-backdrop" onclick="closeModal('modal-p1')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p1')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">Attrition Risk &amp; Workforce Segmentation</h3>
+          <p class="modal-desc">Organizations lose significant revenue to unplanned employee turnover. HR teams lacked a
+            data-driven mechanism to proactively identify at-risk employees before attrition occurred.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>HR Employee Attrition Dataset — demographics, satisfaction, performance, compensation.</p>
+            </div>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>Preprocessing → Feature Engineering → Logistic Regression / KNN / Decision Tree → Flask Deployment.</p>
+            </div>
+          </div>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
+            <ul>
+              <li>Achieved 87.9% classification accuracy on attrition prediction</li>
+              <li>Deployed real-time prediction interface via Flask web application</li>
+              <li>Enabled proactive retention strategies for HR leadership</li>
+            </ul>
+          </div>
+
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Flask</span><span>Pandas</span><span>Seaborn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="project-modal" id="modal-p2">
+      <div class="modal-backdrop" onclick="closeModal('modal-p2')"></div>
+      <div class="glass-card modal-content" style="max-width: 800px;">
+        <button class="modal-close" onclick="closeModal('modal-p2')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">Churn Prediction Analysis</h3>
+          <p class="modal-desc">Customer churn directly impacts revenue and growth. The business needed a predictive
+            model to identify high-risk customers before disengagement, enabling targeted retention campaigns.</p>
+
+          <img src="assets/churn_1.png" alt="Customer Dashboard" class="clickable-img" onclick="openLightbox(this.src)"
+            style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>Customer behavioral & demographic dataset — usage, engagement, churn flags.</p>
+              <img src="assets/churn_2.png" alt="Monthly Charge vs Tenure" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+              <img src="assets/churn_3.png" alt="Monthly Charge by Customer Status" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+            </div>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology & Evaluation</h4>
+              <p>Data Cleaning → EDA → Feature Engineering → XGBoost → Power BI Dashboards.</p>
+              <img src="assets/churn_4.png" alt="Data Exploration Plots" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+              <img src="assets/churn_5.png" alt="Model Evaluation Metrics" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+            </div>
+          </div>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
+            <ul>
+              <li>92% model accuracy with gradient-boosted decision trees</li>
+              <li>Reduced manual evaluation effort by 60%</li>
+              <li>Improved decision turnaround time by 30% through automated reporting</li>
+            </ul>
+          </div>
+
+          <div class="project-tags">
+            <span>Python</span><span>XGBoost</span><span>SQL</span><span>Power BI</span><span>Pandas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="project-modal" id="modal-p3">
+      <div class="modal-backdrop" onclick="closeModal('modal-p3')"></div>
+      <div class="glass-card modal-content">
+        <button class="modal-close" onclick="closeModal('modal-p3')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">FinTrack Pro — CLI Finance Manager</h3>
+          <p class="modal-desc">Personal finance tracking tools are often overcomplicated. This project delivers a
+            lightweight, database-backed CLI system for expense management, budgeting, and category-level analytics.</p>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-database-2-line"></i> Data Profile</h4>
+              <p>User-generated financial records — expenses, categories, subscriptions, budgets.</p>
+            </div>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget Alerts.</p>
+            </div>
+          </div>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
+            <ul>
+              <li>Modular architecture with 4-table relational database</li>
+              <li>Automated budget alerts when spending exceeds limits</li>
+              <li>Category-wise analytics generated via raw SQL queries</li>
+            </ul>
+          </div>
+
+          <div class="project-tags">
+            <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>SQL</span><span>CLI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="project-modal" id="modal-p4">
+      <div class="modal-backdrop" onclick="closeModal('modal-p4')"></div>
+      <div class="glass-card modal-content" style="max-width: 800px;">
+        <button class="modal-close" onclick="closeModal('modal-p4')"><i class="ri-close-line"></i></button>
+        <div class="modal-body">
+          <h3 class="modal-title">EDU_HUB — Personalized Learning Platform</h3>
+          <p class="modal-desc">Existing educational platforms suffer from slow page loads and poor adaptive
+            experiences. This project engineered a high-performance e-learning platform delivering personalized learning
+            pathways.</p>
+
+          <div style="margin-bottom: 1.5rem;">
+            <a href="https://eduhublearningplatform.vercel.app/pg1.html" target="_blank" rel="noopener"
+              class="btn btn-primary btn-sm">
+              <i class="ri-global-line"></i> Live Website
+            </a>
+          </div>
+
+          <iframe src="https://eduhublearningplatform.vercel.app/pg1.html" class="eduhub-iframe" style="width: 100%; height: 60vh; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 1.5rem;"></iframe>
+
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h4><i class="ri-pages-line"></i> Tech Stack</h4>
+              <p>HTML5, CSS3, JavaScript, Django, PHP APIs.</p>
+              <img src="assets/eduhub_2.png" alt="EDU_HUB Dashboard" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+              <img src="assets/eduhub_4.png" alt="EDU_HUB Form" class="clickable-img" onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+            </div>
+            <div class="modal-col">
+              <h4><i class="ri-git-merge-line"></i> Methodology</h4>
+              <p>Frontend Architecture → Hybrid Backend → Interactive Assessment Module → UX Standardization.</p>
+              <img src="assets/eduhub_3.png" alt="EDU_HUB Features" class="clickable-img"
+                onclick="openLightbox(this.src)"
+                style="width: 100%; border-radius: 6px; margin-top: 1rem; border: 1px solid rgba(255,255,255,0.1);" />
+            </div>
+          </div>
+
+          <div class="modal-insights">
+            <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
+            <ul>
+              <li>50% reduction in page load latency across all devices</li>
+              <li>Selected and recognized at HACK-IOT 2024 (1st place among 450+ teams)</li>
+              <li>Accessibility-compliant, cross-device compatible platform</li>
+            </ul>
+          </div>
+
+          <div class="project-tags">
+            <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
      LIGHTBOX
