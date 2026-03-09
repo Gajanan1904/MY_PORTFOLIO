@@ -74,7 +74,7 @@
 
     <p class="hero-desc reveal">
       I transform raw data into actionable insights using Python, SQL, and BI tools.
-I build predictive models, interactive dashboards, and data pipelines that support data-driven decision making.
+      I build predictive models, interactive dashboards, and data pipelines that support data-driven decision making.
     </p>
 
     <div class="hero-tools reveal">
@@ -328,9 +328,34 @@ I build predictive models, interactive dashboards, and data pipelines that suppo
             High-performance e-learning architecture delivering personalized and adaptive student pathways.
           </p>
           <div class="project-tags">
-            <span>Django</span><span>JS</span><span>PHP</span>
+            <span>Django</span><span>JS</span><span>PHP</span><span
+              style="background: rgba(255, 152, 0, 0.2); color: #ff9800; border: 1px solid #ff9800;">Work in
+              Progress</span>
           </div>
           <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p4')">See More <i
+              class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 — ML-Based EV Range Predictor -->
+      <div class="glass-card project-card reveal">
+        <div class="project-card-image-wrap">
+          <img src="assets/10.png" alt="EV Range Predictor Thumbnail" class="project-thumbnail" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-header">
+            <div class="project-card-icon c3"><i class="ri-car-line"></i></div>
+            <h3 class="project-card-title">ML-Based EV Range Predictor</h3>
+          </div>
+          <p class="project-problem">
+            A machine learning web app determining if an Electric Vehicle is long-range based on vehicle features.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Flask</span><span>Scikit-learn</span><span
+              style="background: rgba(255, 152, 0, 0.2); color: #ff9800; border: 1px solid #ff9800;">Work in
+              Progress</span>
+          </div>
+          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p3')">See More <i
               class="ri-arrow-right-line"></i></button>
         </div>
       </div>
@@ -353,28 +378,6 @@ I build predictive models, interactive dashboards, and data pipelines that suppo
             <span>Python</span><span>Scikit-learn</span><span>Flask</span>
           </div>
           <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p1')">See More <i
-              class="ri-arrow-right-line"></i></button>
-        </div>
-      </div>
-
-      <!-- PROJECT 3 — FinTrack Pro -->
-      <div class="glass-card project-card reveal">
-        <div class="project-card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=600&auto=format&fit=crop"
-            alt="Finance Project Thumbnail" class="project-thumbnail" />
-        </div>
-        <div class="project-card-body">
-          <div class="project-card-header">
-            <div class="project-card-icon c3"><i class="ri-money-dollar-circle-line"></i></div>
-            <h3 class="project-card-title">FinTrack Pro Finance</h3>
-          </div>
-          <p class="project-problem">
-            A lightweight, database-backed CLI system for expense management, budgeting, and automated alerts.
-          </p>
-          <div class="project-tags">
-            <span>SQLite</span><span>SQLAlchemy</span><span>CLI</span>
-          </div>
-          <button class="btn btn-primary btn-sm btn-see-more" onclick="openModal('modal-p3')">See More <i
               class="ri-arrow-right-line"></i></button>
         </div>
       </div>
@@ -678,13 +681,14 @@ I build predictive models, interactive dashboards, and data pipelines that suppo
       <div class="glass-card modal-content">
         <button class="modal-close" onclick="closeModal('modal-p3')"><i class="ri-close-line"></i></button>
         <div class="modal-body">
-          <h3 class="modal-title">FinTrack Pro — CLI Finance Manager</h3>
-          <p class="modal-desc">Personal finance tracking tools are often overcomplicated. This project delivers a
-            lightweight, database-backed CLI system for expense management, budgeting, and category-level analytics.</p>
+          <h3 class="modal-title">ML-Based EV Range Predictor</h3>
+          <p class="modal-desc">As the Electric Vehicle market expands, predicting actual range is crucial for adoption.
+            This application leverages historical EV population data to classify vehicles as long-range or short-range
+            using tailored machine learning models.</p>
 
           <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-            <a href="https://github.com/Gajanan1904/FinTrack-Pro-Expense-Management-Analytics-System" target="_blank"
-              rel="noopener" class="btn btn-primary btn-sm">
+            <a href="https://github.com/Gajanan1904/Electric-Vehicle-Population" target="_blank" rel="noopener"
+              class="btn btn-primary btn-sm">
               <i class="ri-github-fill"></i> GitHub
             </a>
           </div>
@@ -692,25 +696,29 @@ I build predictive models, interactive dashboards, and data pipelines that suppo
           <div class="modal-grid">
             <div class="modal-col">
               <h4><i class="ri-database-2-line"></i> Data Profile</h4>
-              <p>User-generated financial records — expenses, categories, subscriptions, budgets.</p>
+              <p>Washington State EV Population Data — model year, electric vehicle type (BEV/PHEV), clean alternative
+                fuel eligibility, and electric range.</p>
             </div>
             <div class="modal-col">
               <h4><i class="ri-git-merge-line"></i> Methodology</h4>
-              <p>SQLAlchemy ORM → CRUD Operations → SQL JOIN/GROUP BY Reports → Budget Alerts.</p>
+              <p>Data Preprocessing → Model Training (Scikit-learn) → Pickle Serialization → Flask Web Service
+                Deployment.</p>
             </div>
           </div>
 
           <div class="modal-insights">
             <h4><i class="ri-medal-line"></i> Key Outcomes</h4>
             <ul>
-              <li>Modular architecture with 4-table relational database</li>
-              <li>Automated budget alerts when spending exceeds limits</li>
-              <li>Category-wise analytics generated via raw SQL queries</li>
+              <li>Built and trained an accurate probability predictor for EV ranges</li>
+              <li>Engineered a functional frontend interface leveraging HTML and Flask templates</li>
+              <li>Deployed a prediction backend providing instantaneous feedback on vehicle capability</li>
             </ul>
           </div>
 
           <div class="project-tags">
-            <span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>SQL</span><span>CLI</span>
+            <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>Numpy</span><span>Pickle</span><span
+              style="background: rgba(255, 152, 0, 0.2); color: #ff9800; border: 1px solid #ff9800;">Work in
+              Progress</span>
           </div>
         </div>
       </div>
@@ -770,7 +778,10 @@ I build predictive models, interactive dashboards, and data pipelines that suppo
           </div>
 
           <div class="project-tags">
-            <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub Actions</span>
+            <span>JavaScript</span><span>Django</span><span>PHP</span><span>HTML/CSS</span><span>GitHub
+              Actions</span><span
+              style="background: rgba(255, 152, 0, 0.2); color: #ff9800; border: 1px solid #ff9800;">Work in
+              Progress</span>
           </div>
         </div>
       </div>
