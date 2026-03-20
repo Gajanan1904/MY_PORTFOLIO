@@ -844,7 +844,7 @@ ul {
    ============================================================ */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -1451,6 +1451,7 @@ textarea.form-control {
 @media (max-width: 1024px) {
 
   .skills-grid,
+  .project-grid,
   .achievements-grid,
   .education-grid {
     grid-template-columns: repeat(2, 1fr);
