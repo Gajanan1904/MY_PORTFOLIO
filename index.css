@@ -1146,13 +1146,15 @@ ul {
    ACHIEVEMENTS
    ============================================================ */
 .achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .achievement-card {
-  width: 100%;
+  flex: 1 1 350px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1213,7 +1215,7 @@ ul {
    ============================================================ */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -1451,8 +1453,6 @@ textarea.form-control {
 @media (max-width: 1024px) {
 
   .skills-grid,
-  .project-grid,
-  .achievements-grid,
   .education-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1463,7 +1463,6 @@ textarea.form-control {
   .about-grid,
   .skills-grid,
   .project-grid,
-  .achievements-grid,
   .education-grid {
     grid-template-columns: 1fr;
   }
