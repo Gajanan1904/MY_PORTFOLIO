@@ -554,6 +554,9 @@ ul {
 }
 
 .hero-tools span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: .32rem .9rem;
   border-radius: 999px;
   font-size: .78rem;
@@ -561,6 +564,19 @@ ul {
   color: var(--text-accent);
   background: rgba(99, 102, 241, 0.08);
   border: 1px solid rgba(99, 102, 241, 0.18);
+  transition: all var(--transition);
+}
+
+.hero-tools span:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+.hero-tools img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .hero-cta {
