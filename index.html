@@ -89,6 +89,8 @@
 
     <div class="hero-cta reveal">
       <a href="#projects" class="btn btn-primary"><i class="ri-folder-line"></i> View Projects</a>
+      <a href="javascript:void(0);" onclick="openModal('modal-resume')" class="btn btn-outline"><i
+          class="ri-eye-line"></i> View Resume</a>
       <a href="https://github.com/Gajanan1904/MY_PORTFOLIO/releases/download/CV/12313438.pdf" class="btn btn-outline"><i
           class="ri-file-download-line"></i> Download Resume</a>
       <a href="#contact" class="btn btn-ghost"><i class="ri-mail-send-line"></i> Contact</a>
@@ -796,6 +798,19 @@
               style="background: rgba(255, 152, 0, 0.2); color: #ff9800; border: 1px solid #ff9800;">Currently
               Working</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Resume -->
+    <div class="project-modal" id="modal-resume">
+      <div class="modal-backdrop" onclick="closeModal('modal-resume')"></div>
+      <div class="glass-card modal-content" style="max-width: 800px; height: 90vh;">
+        <button class="modal-close" onclick="closeModal('modal-resume')"><i class="ri-close-line"></i></button>
+        <div class="modal-body" style="height: calc(100% - 40px); display: flex; flex-direction: column;">
+          <h3 class="modal-title" style="margin-bottom: 1rem;">My Resume</h3>
+          <iframe src="https://github.com/Gajanan1904/MY_PORTFOLIO/releases/download/CV/12313438.pdf"
+            style="flex: 1; width: 100%; border: none; border-radius: 8px;"></iframe>
         </div>
       </div>
     </div>
