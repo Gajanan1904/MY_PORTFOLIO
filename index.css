@@ -600,21 +600,14 @@ ul {
   font-size: .92rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
-}
-
-.btn:hover {
-  transform: translateY(-2px);
+  transition: background var(--transition), color var(--transition);
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-purple));
   color: #fff;
+  /* Reduced baseline glow if the glow itself was interpreted as an animation */
   box-shadow: var(--glow-btn);
-}
-
-.btn-primary:hover {
-  box-shadow: 0 0 28px rgba(99, 102, 241, 0.65), 0 0 80px rgba(99, 102, 241, 0.18);
 }
 
 .btn-outline {
