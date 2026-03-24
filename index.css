@@ -944,6 +944,36 @@ ul {
   border-color: rgba(99, 102, 241, 0.3);
 }
 
+.exp-hierarchy {
+  border-left: 2px solid rgba(99, 102, 241, 0.2);
+  padding-left: 1.5rem;
+  margin-left: 0.4rem;
+  margin-top: 1rem;
+}
+
+.exp-role {
+  position: relative;
+}
+
+.exp-role::before {
+  content: '';
+  position: absolute;
+  left: -1.82rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+  transition: all var(--transition);
+}
+
+.exp-role:hover::before {
+  background: var(--accent-primary);
+  box-shadow: 0 0 16px var(--accent-primary);
+}
+
 /* ============================================================
    PROJECTS
    ============================================================ */
