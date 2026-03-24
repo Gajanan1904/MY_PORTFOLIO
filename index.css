@@ -777,6 +777,9 @@ ul {
 }
 
 .skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: .35rem .85rem;
   font-size: .82rem;
   font-weight: 500;
@@ -785,6 +788,17 @@ ul {
   color: var(--text-secondary);
   border: 1px solid rgba(148, 163, 184, 0.15);
   transition: all var(--transition);
+}
+
+.skill-tags span img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.skill-tags span i {
+  font-size: 1.1rem;
+  color: var(--accent-primary);
 }
 
 .skill-tags span:hover {
