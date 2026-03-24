@@ -468,10 +468,8 @@ ul {
   z-index: 1;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: calc(var(--nav-h) + 2rem) 1.5rem 4rem;
   background: var(--bg-hero-grad);
   overflow: hidden;
@@ -488,6 +486,80 @@ ul {
   background-size: 60px 60px;
   opacity: 0.03;
   pointer-events: none;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1280px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text-side {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-image-side {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-text-side {
+    text-align: center;
+  }
+}
+
+.hero-img-wrap {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-pink));
+  animation: floatOrb 6s ease-in-out infinite alternate;
+}
+
+@media (max-width: 992px) {
+  .hero-img-wrap {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 5px solid var(--bg-primary);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-img-backdrop {
+  position: absolute;
+  inset: -15px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  filter: blur(30px);
+  border-radius: 50%;
+  opacity: 0.35;
+  z-index: 1;
+  animation: pulseGlow 4s ease-in-out infinite;
 }
 
 .hero-badge {
@@ -545,12 +617,24 @@ ul {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 992px) {
+  .hero-desc {
+    margin: 0 auto 2rem auto;
+  }
+}
+
 .hero-tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: .6rem;
   margin-bottom: 2.2rem;
+}
+
+@media (max-width: 992px) {
+  .hero-tools {
+    justify-content: center;
+  }
 }
 
 .hero-tools span {
@@ -582,9 +666,16 @@ ul {
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
+
+@media (max-width: 992px) {
+  .hero-cta {
+    justify-content: center;
+  }
+}
+
 
 /* ============================================================
    BUTTONS
