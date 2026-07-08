@@ -1194,6 +1194,36 @@ ul {
   transform: translateX(4px);
 }
 
+.project-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-actions .btn {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0;
+  flex: 1;
+  min-width: 95px;
+}
+
+.project-actions .btn-primary i {
+  transition: transform 0.2s ease;
+}
+
+.project-actions .btn-primary:hover i {
+  transform: translateX(4px);
+}
+
+
 /* ============================================================
    PROJECT MODALS
    ============================================================ */
